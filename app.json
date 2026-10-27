@@ -1,25 +1,33 @@
 {
   "expo": {
-    "name": "daily-spend",
+    "name": "Daily Expense v2",
     "slug": "daily-spend",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "android": {
+      "package": "com.designabbey.dailyspend",
+      "allowBackup": false,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "./modules/payment-reader",
+      "expo-splash-screen",
+      "expo-sharing"
+    ],
+    "scheme": "dailyspend",
+    "owner": "design-abbey",
+    "extra": {
+      "eas": {
+        "projectId": "1fccf7d3-b5c4-455c-90b6-54d37f066c62"
+      }
     }
   }
 }
